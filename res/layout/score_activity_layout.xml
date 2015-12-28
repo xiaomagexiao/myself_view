@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/score_text"
+        style="@style/wrap"
+        android:hint="输入分数"
+        android:minLines="3" />
+
+    <Button
+        android:id="@+id/score_button"
+        android:layout_below="@id/score_text"
+        style="@style/fillx"
+        android:text="点击显示分数" />
+
+    <Button
+        android:id="@+id/increase_button"
+         android:layout_below="@id/score_button"
+        style="@style/fillx"
+        android:text="动态显示分数" />
+
+    <com.example.myselfview.view.ScoreWithPicView
+        android:id="@+id/score_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content" >
+    </com.example.myselfview.view.ScoreWithPicView>
+
+</RelativeLayout>

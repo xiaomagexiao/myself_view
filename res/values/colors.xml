@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white_transparent">#e0ffffff</color>
+    <color name="theme_color">#ff4BB250</color>
+    <color name="dark">#FF222222</color>
+    <color name="light">#FFEEEEEE</color>
+
+</resources>

@@ -1,0 +1,65 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/dialog_button"
+            style="@style/fillx"
+            android:text="对话框效果" />
+
+        <Button
+            android:id="@+id/score_button"
+            style="@style/fillx"
+            android:text="分数效果" />
+
+        <Button
+            android:id="@+id/pic_button"
+            style="@style/fillx"
+            android:text="拍照、选照片效果" />
+
+        <Button
+            android:id="@+id/relative_button"
+            style="@style/fillx"
+            android:text="自定义Relative"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/full_pic_show"
+            style="@style/fillx"
+            android:text="多图片全屏显示" />
+
+        <Button
+            android:id="@+id/circle_pic_show"
+            style="@style/fillx"
+            android:text="图片圆角处理" />
+
+        <Button
+            android:id="@+id/svl_view"
+            style="@style/fillx"
+            android:text="ScrollView+ViewPager+ListView" />
+
+        <Button
+            android:id="@+id/jd_toast"
+            style="@style/fillx"
+            android:text="防制京东的带图标的toast" />
+
+        <Button
+            android:id="@+id/wave_effect"
+            style="@style/fillx"
+            android:text="支付宝声波效果" />
+         <Button
+            android:id="@+id/gridview_header"
+            style="@style/fillx"
+            android:text="gridview+header view" />
+          <Button
+            android:id="@+id/http_cookie"
+            style="@style/fillx"
+            android:text="http携带cookie" />
+    </LinearLayout>
+
+</ScrollView>

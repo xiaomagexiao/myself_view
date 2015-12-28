@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/fullscreen_button"
+        style="@style/fillx"
+        android:text="网络图片全屏" />
+
+    <Button
+        android:id="@+id/showpath_button"
+        style="@style/fillx"
+        android:text="显示图片路径" />
+
+    <TextView
+        android:id="@+id/path_text"
+        style="@style/wrap"
+        android:hint="点击按钮显示图片路径"
+        android:minLines="3" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        style="@style/wrap"
+        android:hint="这是一个编辑框"
+        android:minLines="3" />
+
+    <LinearLayout
+        android:id="@+id/pic_content_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+    </LinearLayout>
+
+    <com.example.myselfview.view.ChoicePicFromLocalView
+        android:id="@+id/choic_carme_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </com.example.myselfview.view.ChoicePicFromLocalView>
+
+</LinearLayout>

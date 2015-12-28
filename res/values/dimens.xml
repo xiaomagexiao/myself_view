@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="startup_pg_margin_bot">6.0dip</dimen>
+    <dimen name="startup_pg_padding">4.0dip</dimen>
+    <dimen name="base_padding">16dp</dimen>
+
+</resources>

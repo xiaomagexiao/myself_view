@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.example.myselfview.view.CustomScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            style="@style/fillall"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/test_result_bg" />
+
+            <LinearLayout
+                style="@style/fillall"
+                android:id="@+id/view_pager_container"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:background="#77777777" />
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/foruminfo_vp_repyly"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#f9f9f9" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.example.myselfview.view.CustomScrollView>
+
+</RelativeLayout>

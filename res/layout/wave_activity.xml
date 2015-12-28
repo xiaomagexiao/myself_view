@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <com.example.myselfview.sections.wave.RippleLayout
+        xmlns:ripple="http://schemas.android.com/apk/org.simple.ripplelayout"
+        android:id="@+id/ripple_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ripple:duration="3000"
+        ripple:radius="32dp"
+        ripple:rippleNums="1"
+        ripple:scale="4"
+        ripple:color="#8899CC" >
+
+        <Button
+            android:id="@+id/centerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="点我出波"/>
+
+    </com.example.myselfview.sections.wave.RippleLayout>
+
+</RelativeLayout>
