@@ -52,14 +52,24 @@
             android:id="@+id/wave_effect"
             style="@style/fillx"
             android:text="支付宝声波效果" />
-         <Button
+
+        <Button
             android:id="@+id/gridview_header"
             style="@style/fillx"
             android:text="gridview+header view" />
-          <Button
+
+        <Button
             android:id="@+id/http_cookie"
             style="@style/fillx"
             android:text="http携带cookie" />
+        <Button
+            android:id="@+id/bt_service"
+            style="@style/fillx"
+            android:text="servcie绑定的2种方式" />
+        <Button
+            android:id="@+id/bt_camer_service"
+            style="@style/fillx"
+            android:text="camera在service中保存图片" />
     </LinearLayout>
 
 </ScrollView>

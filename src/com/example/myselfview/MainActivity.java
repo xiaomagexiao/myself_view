@@ -14,6 +14,8 @@ import com.example.myselfview.activity.PicActivity;
 import com.example.myselfview.activity.PicFullScreenActivity;
 import com.example.myselfview.activity.ScoreActivity;
 import com.example.myselfview.activity.ScrollListPagerActivity;
+import com.example.myselfview.sections.bind.BindServiceActivity;
+import com.example.myselfview.sections.camer.CamerServiceActivity;
 import com.example.myselfview.sections.cookie.HttpCookieTestActivity;
 import com.example.myselfview.sections.gridview.GridviewDemoActivity;
 import com.example.myselfview.sections.jdtoast.ToastTestActivity;
@@ -32,6 +34,8 @@ public class MainActivity extends Activity implements OnClickListener {
 	private Button wave_effect;
 	private Button gridview_header;
 	private Button http_cookie;
+	private Button bt_service;
+	private Button bt_camer_service;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +56,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		this.wave_effect = (Button) findViewById(R.id.wave_effect);
 		this.gridview_header = (Button) findViewById(R.id.gridview_header);
 		this.http_cookie = (Button) findViewById(R.id.http_cookie);
+		this.bt_service = (Button) findViewById(R.id.bt_service);
+		this.bt_camer_service = (Button) findViewById(R.id.bt_camer_service);
 
 		this.dialog_button.setOnClickListener(this);
 		this.score_button.setOnClickListener(this);
@@ -64,6 +70,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		this.wave_effect.setOnClickListener(this);
 		this.gridview_header.setOnClickListener(this);
 		this.http_cookie.setOnClickListener(this);
+		this.bt_service.setOnClickListener(this);
+		this.bt_camer_service.setOnClickListener(this);
 	}
 
 	@Override
@@ -98,6 +106,12 @@ public class MainActivity extends Activity implements OnClickListener {
 			break;
 		case R.id.http_cookie:
 			this.startActivity(new Intent(this, HttpCookieTestActivity.class));
+			break;
+		case R.id.bt_service:
+			this.startActivity(new Intent(this, BindServiceActivity.class));
+			break;
+		case R.id.bt_camer_service:
+			this.startActivity(new Intent(this, CamerServiceActivity.class));
 			break;
 		default:
 			break;

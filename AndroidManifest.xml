@@ -8,6 +8,9 @@
         android:minSdkVersion="11"
         android:targetSdkVersion="18" />
 
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -111,6 +114,25 @@
             android:label="http携带cookie"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.example.myselfview.sections.bind.BindServiceActivity"
+            android:label="service绑定的2种方式"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.example.myselfview.sections.camer.CamerServiceActivity"
+            android:label="camera在servcie中抓取图片"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.example.myselfview.sections.bind.CameraService"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name="com.example.myselfview.sections.camer.CameraService"
+            android:enabled="true" >
+        </service>
     </application>
 
 </manifest>
